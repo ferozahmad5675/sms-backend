@@ -10,7 +10,7 @@ app.use(bodyParser.json({ limit: "20mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "20mb", extended: true }));
 
 app.use(cors());
-const PORT = process.env.PORT || 5000;
+const PORT = 5000;
 mongoose
   .connect(
     "mongodb+srv://ferozkhalil:feroz5675@cluster0.rhev1gd.mongodb.net/sms"
